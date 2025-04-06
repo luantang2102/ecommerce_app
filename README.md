@@ -30,7 +30,6 @@ An e-commerce mobile application built with **Flutter** and **Dart** that allows
 - **Firebase**:
   - **Authentication**: User login and registration.
   - **Firestore**: Database for storing products, orders, and user data.
-  - **Cloud Storage**: For storing product images.
 
 ### Payment Integration
 - **Stripe**: Secure payment processing for order payments.
