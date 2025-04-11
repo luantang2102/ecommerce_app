@@ -62,13 +62,16 @@ class _ManageOrdersScreenState extends State<ManageOrdersScreen> {
                     ],
                   ),
                   trailing: Icon(Icons.arrow_forward),
-                  onTap: () {
-                    Navigator.push(
+                  onTap: () async {
+                    await Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => OrderDetailsScreen(order: order),
                       ),
                     );
+                    setState(() {
+                      _ordersFuture = _orderService.getAllOrders(); // Refresh the order list
+                    });
                   },
                 ),
               );

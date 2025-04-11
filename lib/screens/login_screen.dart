@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 // Import necessary services and models
-import '../../services/auth_service.dart';
-import '../../models/user_model.dart';
-import '../sign_up_screen.dart';
+import '../services/auth_service.dart';
+import '../models/user_model.dart';
+import 'sign_up_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -217,7 +217,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: () {
                           // TODO: Implement forgot password functionality
                         },
-                        child: Text('Quên mật khẩu?'),
+                        child: Text(''),
                       ),
                       TextButton(
                         onPressed: _navigateToSignUp,
